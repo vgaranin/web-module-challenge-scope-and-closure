@@ -13,10 +13,12 @@
  * It returns the string `foofoo`
 */
 
-function processFirstItem(stringList, callback) {
-  return callback(stringList[0])
+function processFirstItem(stringList, callback) 
+{
+    return callback(stringList[0]);
 }
-console.log(processFirstItem(['foo','bar'],function(str){return str+str}));
+
+console.log(processFirstItem(['foo', 'bar'], function (str) { return str + str; }));
 
 // ⭐️ Example Challenge END ⭐️
 
@@ -36,11 +38,13 @@ console.log(processFirstItem(['foo','bar'],function(str){return str+str}));
 */
 
 // counter1 code
-function counterMaker() {
-  let count = 0;
-  return function counter() {
-   return count++;
-  }
+function counterMaker()
+{
+    let count = 0;
+    return function counter()
+    {
+        return count++;
+    };
 }
 
 const counter1 = counterMaker();
@@ -48,8 +52,9 @@ const counter1 = counterMaker();
 // counter2 code
 let count = 0;
 
-function counter2() {
-  return count++;
+function counter2()
+{
+    return count++;
 }
 
 
@@ -62,8 +67,10 @@ Use the inning function below to do the following:
 NOTE: This will be a callback function for the tasks below
 */
 
-function inning(/*Code Here*/){
-    /*Code Here*/
+function inning()
+{
+    let score = Math.floor(Math.random() * Math.floor(2));
+    return score;
 }
 
 
@@ -79,10 +86,11 @@ Use the finalScore function below to do the following:
   "Home": 11,
   "Away": 5
 }
-*/ 
+*/
 
-function finalScore(/*code Here*/){
-  /*Code Here*/
+function finalScore(/*code Here*/)
+{
+    /*Code Here*/
 }
 
 /* ⚾️⚾️⚾️ Task 4: getInningScore() ⚾️⚾️⚾️
@@ -90,8 +98,9 @@ Use the getInningScore() function below to do the following:
   1. Receive a callback function - you will pass in the inning function from task 2 as your argument 
   2. Return an object with a score for home and a score for away that populates from invoking the inning callback function */
 
-function getInningScore(/*Your Code Here */) {
-  /*Your Code Here */
+function getInningScore(/*Your Code Here */)
+{
+    /*Your Code Here */
 }
 
 
@@ -136,26 +145,28 @@ Use the scoreboard function below to do the following:
 ]  
   */
 
-function scoreboard(/* CODE HERE */) {
-  /* CODE HERE */
+function scoreboard(/* CODE HERE */)
+{
+    /* CODE HERE */
 }
 
 
 
 
 /* 🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑 */
-function foo(){
-  console.log('its working');
-  return 'bar';
+function foo()
+{
+    console.log('its working');
+    return 'bar';
 }
 foo();
 module.exports = {
-  foo,
-  processFirstItem,
-  counter1,
-  counter2,
-  inning,
-  finalScore,
-  getInningScore,
-  scoreboard,
-}
+    foo,
+    processFirstItem,
+    counter1,
+    counter2,
+    inning,
+    finalScore,
+    getInningScore,
+    scoreboard,
+};

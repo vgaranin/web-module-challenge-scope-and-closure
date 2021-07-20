@@ -31,6 +31,8 @@ console.log(processFirstItem(['foo', 'bar'], function (str) { return str + str; 
   
   1. What is the difference between counter1 and counter2?
   
+  ~ The difference between: counter1 is variable and counter2 is function.
+
   2. Which of the two uses a closure? How can you tell?
   
   3. In what scenario would the counter1 code be preferable? In what scenario would 
@@ -73,7 +75,6 @@ function inning()
     return score;
 }
 
-
 /* ⚾️⚾️⚾️ Task 3: finalScore() ⚾️⚾️⚾️
 Use the finalScore function below to do the following:
   1. Receive the callback function `inning` that was created in Task 2 
@@ -88,19 +89,21 @@ Use the finalScore function below to do the following:
 }
 */
 
-function finalScore(/*code Here*/)
+function finalScore()
 {
-    /*Code Here*/
+
 }
+
+console.log();
 
 /* ⚾️⚾️⚾️ Task 4: getInningScore() ⚾️⚾️⚾️
 Use the getInningScore() function below to do the following:
   1. Receive a callback function - you will pass in the inning function from task 2 as your argument 
   2. Return an object with a score for home and a score for away that populates from invoking the inning callback function */
 
-function getInningScore(/*Your Code Here */)
+function getInningScore()
 {
-    /*Your Code Here */
+
 }
 
 
